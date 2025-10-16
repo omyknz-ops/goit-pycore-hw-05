@@ -38,11 +38,11 @@ def count_logs_by_level(logs: list) -> dict:
 
 
 # Function to display log counts in a formatted table
-def display_log_counts(counts): 
+def display_log_counts(counts: dict):
     print("Рівень логування | Кількість")
-    print("----------------|-----------")
-    for level, count in counts.items(): # Iterate through the counts dictionary
-        print (f"{level:<17}| {count}")
+    print("------------------|----------")
+    for level, count in counts.items():
+        print(f"{level:<17}| {count}")
 
 # Main function to handle command-line arguments and execute the script logic
 def main():
